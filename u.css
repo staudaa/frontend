@@ -1,0 +1,320 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+body {
+    font-family: 'Segoe UI';
+}
+.content .kiri, .banner .kanan, .about .kanan{
+    z-index: 0;
+}
+.content .kanan, .banner .kiri, .about .kiri{
+    z-index: 10;
+}
+.container {
+    width: 100%;
+    background-image: linear-gradient(rgb(209, 167, 209), rgb(226, 180, 188),rgb(211, 211, 255));
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(63, 66, 82);
+    position: fixed;
+    width: 100%;
+    min-height: 93px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.navbar h3{
+    color: rgb(214, 186, 201);
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+ul li {
+        display: inline-block;
+        margin-right: 20px;
+        color: rgb(214, 186, 201);
+    }    
+.navbar ul li a {
+        font-weight: bold;
+        text-decoration: none;
+        color:  rgb(214, 186, 201);
+        transition: 0.4s ease-in-out;
+    } 
+.navbar ul li a:hover {
+        color: rgb(214, 172, 248);
+    }
+
+
+.banner {
+    font-family: 'teks';
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+@font-face {
+    font-family: 'teks';
+    src: url(avocado.ttf);
+}
+.kiri {
+    width: 60%;
+}
+.satu {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(169, 164, 245);
+    border-radius: 50px;
+    width: 200px;
+}
+.kiri h3 {
+
+    font-size: 50px;
+    color: rgb(77, 65, 87);
+}
+
+.kiri h2 {
+    font-size: 40px;
+    color: rgb(77, 65, 87);
+}
+
+.kiri p{
+    color: rgb(67, 41, 94);
+    font-weight: bold;
+}
+
+.kiri .satu {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(77, 56, 105);
+    width: 200px;
+}
+.kanan {
+    width: 35%;
+
+}
+.banner img {
+    min-width: 130px;
+    width: 50%;
+}
+.content {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color:  rgb(211, 211, 255);
+    text-align: center;
+    color: rgb(91, 104, 136);
+    align-items: center;
+    justify-content: center;
+}
+.content img{   
+    min-width: 150px;
+    width: 60%;
+}
+
+.content p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+h1 span:before {
+    content: '';
+    animation: gerak infinite 10s ease;
+    transform: translateY(-50%);
+    color: rgb(91, 104, 136);
+    font-family: 'Times New Roman';
+    font-family: 70px;
+}
+ @keyframes gerak {
+    10% {
+        content: 'Selamat Datang';
+    }
+    30% {
+        content: 'Panggil Saja Saya Rauda';
+    }
+    50% {
+        content: 'Di Bawah Ini Biodata Saya';
+    }
+    100% {
+        content: 'Silahkan Membaca';
+    }
+ }
+.content .kanan{
+    width: 50%;
+}
+.content .kiri {
+    width: 30%;
+    padding-right: 50px;
+}
+.content .kiri h3 { 
+    font-size: 50px;
+    color: rgb(56, 47, 47);
+}
+.paragraf {
+    color: rgb(34, 57, 102);
+}
+.about {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(211, 211, 255), rgb(159, 159, 230), rgb(178, 151, 196), rgb(204, 179, 194));
+    align-items: center;
+    justify-content: center;
+}
+
+.about .kanan p {
+    margin-top: 10px;
+}
+.about .kanan h3 {
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .kanan img{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 100%;
+    max-width: 350px;
+}
+.about .kanan{
+    margin-top: 50px;
+    width: 30%;
+    height: 70vh;
+    padding: 20px;
+    border-radius: 50px;
+    padding-left: 40px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .kiri {
+    width: 30%;
+    padding-right: 50px;
+}
+.about .kiri h3 { 
+    font-size: 50px;
+    color: rgb(56, 47, 47);
+}
+.about .kiri h3 {
+    text-align: center;
+    font-family: 'bio';
+}
+@font-face {
+    font-family: 'bio';
+    src: url(strezy.otf);
+}
+.about .kiri p {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'biodata';
+}
+@font-face {
+    font-family: 'biodata';
+    src: url(kiwi.ttf);
+}
+.account ul {
+    margin-left: -45px;
+}
+.account li {
+    list-style: none;
+    display: inline-block;
+}
+.account {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color:   rgb(204, 179, 194);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    color: rgb(77, 61, 107);
+}
+.box {
+    display: inline-block;
+    width: 570px;
+    height: 50%;
+    border-radius: 20px;
+    padding-top: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-right: 40px;
+    padding: 40px;  
+    text-align: center;
+    padding-bottom: 7px;
+    transition: all 1s ease-in-out ;
+}
+.box:hover {
+    background-color: rgb(245, 229, 237);
+    transform: scale(1.1);
+    color: antiquewhite;
+}
+.terserah {
+margin-top: 25px;
+
+}
+.account h1 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: rgb(86, 67, 122);
+}
+
+.account p {
+    text-align: center;
+    margin-left: 75px;
+    padding-top: 20px;
+    width: 400px;
+    height: auto;
+    color: rgb(58, 50, 59);
+    font-weight: bold;
+}
+.footer{
+    background-color:rgb(54, 38, 65);
+    width: 100%;
+    height: 50px;
+    color: rgb(233, 221, 236);
+    line-height: 50px;
+    text-align: center;
+}
+@media screen and (max-width:700px) {
+    .login {
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .content .kiri, .banner .kanan, .about .kanan{
+        transition: 0s;
+        scale: 0;
+    }
+    .content .kanan, .banner .kiri, .about .kiri{
+        border-radius: 5%;
+        padding: 20px 45px;
+        background-color: rgba(250,250,250,0.2);
+        position: absolute;
+    }
+}

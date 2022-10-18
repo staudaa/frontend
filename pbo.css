@@ -1,0 +1,56 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Segoe UI';
+}
+
+.container {
+    width: 100%;
+    background: linear-gradient(to top, rgba(102, 100, 100, 0.5)50%, rgba(102, 100, 100, 0.5)50%), url(Untitled\ design\ \(12\).png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.login {
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login img{
+width: 20%;
+height: 40%;
+border-radius: 100%;
+}
+.login button {
+border: 0;
+margin-bottom: 100px;
+margin-top: 5px;
+font-weight: bold;
+padding: 10px;
+border-radius: 15px;
+width: 150px;
+background-color: rgb(51, 52, 59);
+color: rgb(231, 218, 225);
+}
+.login button a{
+    font-weight: bold;
+    text-decoration: none;
+}
+.login h2{
+margin-top: 10px;
+font-family: 'tulisan';
+font-size: 30px;
+color: rgb(32, 31, 31);
+}
+@font-face {
+font-family: 'tulisan';
+src: url(Kimbab.ttf);
+}
